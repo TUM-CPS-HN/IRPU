@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hprobz"
+version = "1.0.0"
+description = "HProbZ output head, training objective and split-conformal calibration"
+readme = "README.md"
+authors = [{ name = "Zhen Zhang" }, { name = "Amr Alanwar" }]
+dependencies = ["torch"]
+
+[project.optional-dependencies]
+theory = ["numpy", "matplotlib"]
+
+[tool.setuptools]
+packages = ["hprobz"]
